@@ -1,0 +1,176 @@
+ body {
+      background-image: url(Images/background.jpg);
+margin: 0;
+background-size: cover;
+image-rendering: -webkit-optimize-contrast;
+background-position: 50% 50%;
+background-repeat: repeat;
+background-attachment: fixed;
+    }
+    
+ul{
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: transparent;
+position: relative;
+top: 0;
+width: 100%;
+}
+
+.search-bar input[type="search"]{
+  float: left;
+  width: 500px;
+  height: 40px;
+  position: absolute;
+  right: 200px;
+  top: 10px;
+  border: 10px;
+  margin-left: 20px;
+  background-color: skyblue;
+  border-radius: 50px;
+  
+
+}
+.search-bar input[type="search"]::placeholder{
+  font-family: Arial;
+  color: grey;
+  float: left;
+  margin-top: 11px;
+  margin-left: 10px;
+
+}
+li{
+    float: left;
+}
+li a{
+    display: block;
+    color: black;
+    text-align: right;
+    padding: 20px 50px;
+    text-decoration: blink;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+li a:hover:not(.active){
+    background-color: skyblue;
+}
+.active {
+    background-color: none;
+    opacity: 1;
+}
+.header{
+    color: white;
+    font-size: 55px;
+    padding-left: 10%;
+    padding-top: 15%;
+    font-family: sans-serif;
+}
+.h4{
+    color: white;
+    padding-top: 0%;
+    padding-left: 10%;
+}
+.a{
+    color:white;
+}
+    .container {
+      max-width: 1300px;
+      margin-left: 70px;
+      padding: 20px;
+    }
+
+    .intro {
+      font-size: 50px;
+      font-weight: bold;
+      margin-top: 20px;
+      text-align: center;
+      margin-bottom: 50px;
+      animation: fadeIn 3s;
+      color: white;
+      white-space: pre-wrap;
+      
+    }
+
+    .about-me {
+      font-size: 35px;
+      line-height: 1.5;
+      margin-top: 20%;
+      color: white;
+      animation: fadeIn 3s;
+      text-align: center;
+    }
+    .p{
+      font-size: 28px;
+
+    }
+    
+    
+    .things {
+      font-size: 35px;
+      font-weight: bold;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      margin-top: 80px;
+      animation: fadeIn 3s;
+      text-align: center;
+      color: white
+      
+    }
+   
+
+   
+
+   
+    .images{
+      width: 800;
+      height: 500;
+      display: flex;
+      padding: 0;
+      margin: 0;
+      animation: fadeIn 3s;
+      border-radius: 15%;
+      margin-left: 260px;
+      margin-top: 50px;
+      opacity: 0.9;  
+      border-color: black;
+      border-width: 50px;    
+    }
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+
+.fade-in:hover {
+  opacity: 1;
+}
+
+    /* Add the animation keyframes */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 0.9;
+      }
+    }
+
+    .profile-picture {
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    border-radius: 50%;
+    top: 5px;
+    right: 5px;
+    
+}
+
+
+.profile-picture:hover{
+opacity: 0.5;
+
+}
