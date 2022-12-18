@@ -1,0 +1,107 @@
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Kashieca">
+<meta name="description" content="Hello This is my first html Website">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+</head>
+<title>
+            The Chronicles of Kashieca
+        </title>
+        <link rel="stylesheet" type="text/css" href="styleforcontactme.css">
+        
+    </head>
+    <ul class="active">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Background.html">Background</a></li>
+        <li><a href="Images.html">Images</a></li>
+        <li><a href="Contact me.html">Contact me</a></li>
+     <form class="search-bar">
+      <input type="search" placeholder="Search...">
+  
+    </form>
+      </ul>
+       <a href="index.html" title="Visit my Website">
+    <img src="Images/profile.jpg" alt="Profile Picture" class="profile-picture">
+    </a>
+
+    <body>
+        
+        <div class="header1">
+  <h1></h1>
+ 
+  </div>
+  <div class="p1">
+  <p></p>
+  
+  </div>
+<div class="h2">
+    <h2>Email: <a href="kayecla4505val@student.fatima.edu.ph">kayecla4505val@student.fatima.edu.ph</a></h2>
+    <h2>Facebook: <a href="https//facebook.com/shieclaye">Shie Claye</a></h2>
+    <h2>Phone Number: 09673172610</h2>
+    <h2>Instagram: <a a href="https://mzzy_kshca">mzzy_kshca</a></h2>
+</div>
+  
+<script>
+// Get the element to animate
+const header = document.querySelector('.header1 h1');
+const paragraph = document.querySelector('.p1 p');
+
+// Set the text to animate
+const headerText = 'Contact Me';
+const paragraphText = "I'd love to hear from you! You can contact me through the following methods:";
+
+// Set the initial text and index for the animation
+let headerIndex = 0;
+let paragraphIndex = 0;
+header.textContent = '';
+paragraph.textContent = '';
+
+// Set the interval for the animation
+const typingInterval = 60; // in milliseconds
+const headerTyping = setInterval(() => {
+  // Add the next character and increment the index
+  header.textContent += headerText[headerIndex];
+  headerIndex++;
+
+  // If all characters have been typed, clear the interval
+  if (headerIndex === headerText.length) {
+    clearInterval(headerTyping);
+  }
+}, typingInterval);
+
+// Delay the start of the paragraph animation
+setTimeout(() => {
+  const paragraphTyping = setInterval(() => {
+    // Add the next character and increment the index
+    paragraph.textContent += paragraphText[paragraphIndex];
+    paragraphIndex++;
+
+    // If all characters have been typed, clear the interval
+    if (paragraphIndex === paragraphText.length) {
+      clearInterval(paragraphTyping);
+    }
+  }, typingInterval);
+}, headerText.length * typingInterval);
+
+</script>
+</body>
+</html>

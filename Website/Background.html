@@ -1,0 +1,87 @@
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Kashieca">
+<meta name="description" content="Hello This is my first html Website">
+    <head>
+      <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+        <title>
+            The Chronicles of Kashieca
+        </title>
+        <link rel="stylesheet" type="text/css" href="styleforbackground.css">
+        <link rel="stylsheet" type="text/css" href="style.css">
+    </head>
+    <ul class="active">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Background.html">Background</a></li>
+        <li><a href="Images.html">Images</a></li>
+        <li><a href="Contact me.html">Contact me</a></li>
+     <form class="search-bar">
+      <input type="search" placeholder="Search...">
+  
+    </form>
+      </ul>
+<body>
+    <a href="index.html" title="Visit my Website">
+
+    <img src="Images/profile.jpg" alt="Profile Picture" class="profile-picture">
+    </a>
+  <div class="container">
+    <div class="intro">
+      <h2></h2>
+    </div>
+    <div class="about-me">
+      <h2>Who am I?</h2>
+      <p class="p"> My name is Kashieca Mizzy A. Yecla. Fun fact about my name "Kashieca" came from a famous clothing store and "Mizzy" from a female rapper artist Missy Elliot.
+        I am an INFP who enjoys sleeping and prefers to be alone with my thoughts. I enjoy conversing with people who have odd facts
+        about other people's viewpoints. I'm not particularly stable in my thoughts and opinions because I'm also indecisive. 
+      </p>
+    </div>
+    <div class="things">
+      Things I Treasure the Most
+    </div>
+ 
+    <img class="images" src="Images/things.png" alt="Things I Treasure">
+
+    <h2 class="things">Things that I like</h2>
+    <img class="images" src="Images/list.png" alt="Things I like">
+    <h2 class="things">My favorite mottos</h2>
+    <img class="images" src="Images/motto.png" alt="Favorite mottos">
+  </div>
+
+
+  <script>
+  function typeText(text, element) {
+    var index = 0;
+    var interval = setInterval(function() {
+      element.textContent += text[index];
+      index++;
+      if (index >= text.length) {
+        clearInterval(interval);
+      }
+    }, 70);
+  }
+
+  var introText = "Hi I'm Kashieca Mizzy A. Yecla\nand Welcome to my website! ";
+  var introElement = document.querySelector(".intro h2, container");
+  typeText(introText, introElement);
+</script>
+  </body>
+  
+
+  </html>

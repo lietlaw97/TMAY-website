@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kashieca">
+    <meta name="description" content="Hello This is my first html Website">
+    <head>
+ <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+        <meta charset="utf-8">
+
+        <title>
+            The Chronicles of Kashieca
+        </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <ul class="active">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Background.html">Background</a></li>
+        <li><a href="Images.html">Images</a></li>
+        <li><a href="Contact me.html">Contact me</a></li>
+         <form class="search-bar">
+      <input type="search" placeholder="Search...">
+    </form>
+    </ul>
+    <body>
+  <header>
+    <h1 class="header animated"></h1>
+    <h4 class="h4-animated"></h4>
+    <a href="index.html" title="Visit my website">
+    <img src="Images/profile.jpg" alt="Profile Picture" class="profile-picture">
+    </a>
+
+
+  </header>
+  
+  <script>
+  function typeText(text, element) {
+    var index = 0;
+    var interval = setInterval(function() {
+      element.textContent += text[index];
+      index++;
+      if (index >= text.length) {
+        clearInterval(interval);
+      }
+    }, 60);
+  }
+
+  var headerText = 'Welcome to The Chronicles of Kashieca';
+  var headerElement = document.querySelector(".header");
+  typeText(headerText, headerElement);
+
+
+  setTimeout(function() {
+    var h4Text = 'Achieving greatness, one step at a time.\nIf you want to learn more about myself just click the "Background" page. ';
+    var h4Element = document.querySelector(".h4-animated");
+    typeText(h4Text, h4Element);
+  }, headerText.length * 70);
+  </script>
+
+</body> 
+
+    
+</html>
+
+ 
+
+
+
+
+
+
