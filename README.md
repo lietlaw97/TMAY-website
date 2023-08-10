@@ -1,1 +1,1 @@
-DON'T CHANGE ANYTHING IN THIS REPOSITORY THANK YOU.
+A custom website that I made for a friend
